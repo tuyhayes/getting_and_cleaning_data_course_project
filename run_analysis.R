@@ -55,10 +55,8 @@ meanstd <- meanstd[,c(2,69,3:68)]
 #Task 5: Create independent tidy data set with average of each variable for each activity 
 #and each subject
 #================================================
-#transform subjectid from numeric to factor; order data by subjectid and activityname
-#meanstd$subjectid <- as.factor(meanstd$subjectid)
-#meanstd <- arrange(meanstd,subjectid, activityname)
-
 library(dplyr)
 tidy <- meanstd %>% group_by(subjectid, activityname) %>% summarise_each(funs(mean(., na.rm=TRUE)))
-write.csv(tidy,file="subjectaverages.csv", row.names=FALSE)
+write.table(tidy,file="subjectaverages.txt", row.names=FALSE)
+column_names <- names(tidy)
+write.csv(column_names,"column_names.csv")
