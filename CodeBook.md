@@ -1,14 +1,6 @@
 Human Activity Recognition Using Smartphones Summary Data Set CodeBook
 
-The data found in the "subjectaverages.csv" file represents a summary of average mean and standard deviation calculations of the original test and training data created as part of the Human Activity Recognition Using Smartphones Data Set.  To create this summary data, the following steps were completed:
-
-1. Combined all records in training (X-training.txt) and test (X-test.txt) data.
-2. Renamed default column headings using data from features.txt.
-3. Combined subject identification data from subject_test.txt and subject_train.txt.
-4. Combined activity data from from y_test.txt and y_train.txt.
-5. Added combined subject and activity data to merged data from step 1.
-6. Merged this dataset with data from activity_labels.txt to show activity name instead of number for easy reading.
-7. Grouped data by subject/activity combination and calculated mean of each remaining variable in the dataset.
+The data found in the "subjectaverages.csv" file represents a summary of average mean and standard deviation calculations of the original test and training data created as part of the Human Activity Recognition Using Smartphones Data Set.  
 
 The following data shows the position, name, and description of each variable (column) in the dataset.
 
