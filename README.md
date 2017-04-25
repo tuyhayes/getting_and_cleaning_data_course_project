@@ -39,6 +39,16 @@ The summarized dataset includes the following files:
 
 - 'run_analysis.R' contains R script for generating summarized data from the Human Activity Recognition Using Smartphones Dataset
 
+To create this summary data, the following steps were completed:
+=========================================
+1. Combined all records in training (X-training.txt) and test (X-test.txt) data.
+2. Renamed default column headings using data from features.txt.
+3. Combined subject identification data from subject_test.txt and subject_train.txt.
+4. Combined activity data from from y_test.txt and y_train.txt.
+5. Added combined subject and activity data to merged data from step 1.
+6. Merged this dataset with data from activity_labels.txt to show activity name instead of number for easy reading.
+7. Grouped data by subject/activity combination and calculated mean of each remaining variable in the dataset.
+
 Notes: 
 ======
 - Features are normalized and bounded within [-1,1].
